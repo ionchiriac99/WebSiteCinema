@@ -1,0 +1,14 @@
+<% if(cookie!=undefined || cookie!=null){ %>
+    <div class="login-page">
+        <section class="antent-login" style="color:red"><%-  `${JSON.parse(cookie).message}`%></section>
+<%}else{%>
+    <section class="antent-login"> </section>
+<%}%>    
+        <form class="auth" method="POST" action="/verificare-inregistrare">
+            <input type="text" id="new_username" name="new_username" placeholder="username"><br>
+            <input type="text" id="first_name" name="first_name" placeholder="first_name"><br>
+            <input type="text" id="last_name" name="last_name" placeholder="last_name"><br>
+            <input type="password" id="new_password" name="new_password" placeholder="password"><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>  

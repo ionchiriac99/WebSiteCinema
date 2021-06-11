@@ -1,0 +1,31 @@
+{
+  "name": "proiect-2-ion-chiriac",
+  "version": "1.0.0",
+  "description": "pw",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dom-parser": "^0.1.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDR-Organization/proiect-2-ion-chiriac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDR-Organization/proiect-2-ion-chiriac/issues"
+  },
+  "homepage": "https://github.com/HDR-Organization/proiect-2-ion-chiriac#readme"
+}

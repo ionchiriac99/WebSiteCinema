@@ -1,0 +1,25 @@
+<% if(session.user!=undefined || session.user!=null){ %>
+    <div class="user">
+        <div>Logat ca <%= session.name%></div>
+        <a href="/deconectare">Deconectare</a> 
+    </div>
+    <div class="login-page">
+        <section class="antent-login"> </section>
+        <form class="auth" method="POST" action="/verificare-rezervare">
+            <input type="text" list="mov" id="namemovie" name="namemovie" placeholder="namemovie"><br>
+            <datalist id="mov">
+                <% for(let i=0;i<movies.length;++i){ %>
+                    <option><%-movies[i].name%></option>
+                <%}%>
+            </datalist>
+            <input type="text" id="place" name="place" placeholder="place"><br><br>
+            <input type="submit" value="Rezervare">
+        </form>
+    </div>
+<% }else{ %>
+    <div class="user">
+        <div class="welcome">Bine ați venit!</div>
+        <a href="/autentificare">Autentificare</a><br>
+    </div>
+<% } %>
+ 

@@ -1,0 +1,27 @@
+<% if(session.user!=undefined || session.user!=null){ %>
+    <div class="user">
+        <div>Logat ca <%= session.name%></div>
+        <a href="/deconectare">Deconectare</a> 
+    </div>
+
+<% }else{ %>
+    <% if(cookie!=undefined || cookie!=null){ %>
+        <div class="login-page">
+            <section class="antent-login" style="color:red"><%-  `${JSON.parse(cookie).message}`%></section>
+    <%}else{%>
+        <section class="antent-login"> </section>
+    <%}%>    
+            <form class="auth" method="POST" action="/verificare-autentificare">
+                <input type="text" id="username" name="username" placeholder="username"><br>
+                <input type="password" id="password" name="password" placeholder="password"><br><br>
+                <input type="submit" value="LogIn">
+            </form>
+        </div>
+<% } %>
+
+
+
+
+
+
+

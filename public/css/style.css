@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../image/background.jpg);
+}
+
+nav{
+	text-align: center;
+    padding: 10px 0px;
+	margin-bottom: 10px;
+    background: linear-gradient(to bottom, #000000, #0f9b0f);
+    width: 100%;
+    float: left;
+}
+
+nav a{
+    display: inline;
+    margin: 5%;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+nav a:hover{
+    color:dodgerblue;
+}
+
+.user{
+    padding-top: 70px;
+    text-align: center;
+    color:greenyellow;
+}
+.user div{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.user a{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color:black;
+    text-decoration: none;
+    background: linear-gradient(to top, #11998e, #38ef7d);
+}
+
+
+.login-page {
+    width: 360px;
+    padding-top:70px;
+    margin: auto;
+}
+.auth {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding:60px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.auth input{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.auth input[type=submit] {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.antet-login{
+    margin:0 auto;
+    text-align: center;
+}
+.result div{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 40px;
+    color:seagreen;
+}
+
+.movie-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.movie-item{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 350px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); 
+}
+.movie-item:hover{
+    background: linear-gradient(to left, #34e89e, #0f3443);
+}
+.movie-item span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.movie-item.bilet-item{
+    width: 300px;
+    height: 110px;
+    overflow: hidden;
+}
+.movie-item.movie-item.bilet-item>div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.movie-item input[type="button"]{
+    margin-left: 35%;
+}
+.movie-item input[type="text"], label{
+    margin-left: 2rem;
+}
+
+.search input{
+    margin:1rem 41rem;
+    padding: 5px;
+    border-radius: 3px;
+    width: 15%;
+	box-sizing: border-box;
+}
+.search input[type=button]{
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
